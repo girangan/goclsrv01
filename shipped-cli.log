@@ -1,0 +1,105 @@
+TRACE 2015/12/01 13:32:06.827186 config.go:100: .shipped directory already exists
+TRACE 2015/12/01 13:32:06.827306 config.go:109: Config file .shipped/shipped.ini already exists in /Users/girangan
+TRACE 2015/12/01 13:32:06.827453 config.go:139: Using config file /Users/girangan/.shipped/shipped.ini
+TRACE 2015/12/01 13:32:06.827543 config.go:139: Using config file /Users/girangan/Desktop/spectre/shipped_testbed/gocl01/goclsrv01/.shipped/shipped.ini
+TRACE 2015/12/01 13:32:06.827594 config.go:148: Also using project config file /Users/girangan/Desktop/spectre/shipped_testbed/gocl01/.shipped/shipped.ini
+TRACE 2015/12/01 13:32:06.827627 config.go:158: Also using home config file /Users/girangan/.shipped/shipped.ini
+TRACE 2015/12/01 13:32:06.829967 utils.go:98: Console width is 80; help width is 79
+TRACE 2015/12/01 13:32:06.830035 main.go:123: Shipped-cli 1.0 b25 20151124 172135 starting in console mode with args {BootLogfile: ConfigFile: ConsoleMode:false Debug:false Expanded:true FastBootstrap:false Full:false Help:false Json:false Latest:false LocalDocker:false Logfile:/Users/girangan/Desktop/spectre/shipped_testbed/gocl01/goclsrv01/shipped-cli.log MockSDKClient:false OutputFields: ShippedHome: ShowVersion:false Server:http://shipped-api.shipped-cisco.com Token:prWMOcNnzLoUlOLODhyCPNgGPCFkxHVg ObjType:console Command: Arguments:[]}
+TRACE 2015/12/01 13:32:10.557551 commands.go:92: Running command(local) subcommand(build) args([]string(nil)) help(false)
+TRACE 2015/12/01 13:32:10.557600 commands.go:160: objDesc.Name = "Local"
+TRACE 2015/12/01 13:32:10.557651 uuidParser.go:196: ==> Using projectId 79c12e70-9856-11e5-ad08-0242ac11055f
+TRACE 2015/12/01 13:32:10.557671 uuidParser.go:196: ==> Using serviceId c6bf25de-9857-11e5-8538-0242ac11004a
+TRACE 2015/12/01 13:32:10.557686 local.go:237: Starting LocalService.Build()
+TRACE 2015/12/01 13:32:10.558002 projects.go:273: Directory  contains a .shipped directory
+TRACE 2015/12/01 13:32:10.558110 projects.go:273: Directory /Users/girangan/Desktop/spectre/shipped_testbed/gocl01 contains a .shipped directory
+TRACE 2015/12/01 13:32:10.558274 client.go:114: GET http://shipped-api.shipped-cisco.com/projects/79c12e70-9856-11e5-ad08-0242ac11055f?api_token=prWMOcNnzLoUlOLODhyCPNgGPCFkxHVg
+TRACE 2015/12/01 13:32:10.558307 client.go:148: Headers: map[]
+TRACE 2015/12/01 13:32:11.614168 client.go:157: Request status code 200 (200 OK)
+TRACE 2015/12/01 13:32:11.614434 config.go:139: Using config file /Users/girangan/Desktop/spectre/shipped_testbed/gocl01/.shipped/shipped.ini
+TRACE 2015/12/01 13:32:11.614538 config.go:158: Also using home config file /Users/girangan/.shipped/shipped.ini
+TRACE 2015/12/01 13:32:11.614556 projects.go:304: Changed to project 79c12e70-9856-11e5-ad08-0242ac11055f directory /Users/girangan/Desktop/spectre/shipped_testbed/gocl01
+TRACE 2015/12/01 13:32:11.614855 client.go:114: GET http://shipped-api.shipped-cisco.com/projects/79c12e70-9856-11e5-ad08-0242ac11055f/services/c6bf25de-9857-11e5-8538-0242ac11004a?api_token=prWMOcNnzLoUlOLODhyCPNgGPCFkxHVg
+TRACE 2015/12/01 13:32:11.614883 client.go:148: Headers: map[]
+TRACE 2015/12/01 13:32:12.156125 client.go:157: Request status code 200 (200 OK)
+TRACE 2015/12/01 13:32:12.157813 config.go:139: Using config file /Users/girangan/Desktop/spectre/shipped_testbed/gocl01/goclsrv01/.shipped/shipped.ini
+TRACE 2015/12/01 13:32:12.157885 config.go:148: Also using project config file /Users/girangan/Desktop/spectre/shipped_testbed/gocl01/.shipped/shipped.ini
+TRACE 2015/12/01 13:32:12.157932 config.go:158: Also using home config file /Users/girangan/.shipped/shipped.ini
+ERROR 2015/12/01 13:32:12.157964 commands.go:98: Service goclsrv01 does not support a build command
+TRACE 2015/12/01 13:34:51.525485 commands.go:92: Running command(local) subcommand(reloadvm) args([]string(nil)) help(false)
+TRACE 2015/12/01 13:34:51.525517 commands.go:160: objDesc.Name = "Local"
+TRACE 2015/12/01 13:34:51.525552 uuidParser.go:196: ==> Using projectId 79c12e70-9856-11e5-ad08-0242ac11055f
+TRACE 2015/12/01 13:34:51.525570 uuidParser.go:196: ==> Using serviceId c6bf25de-9857-11e5-8538-0242ac11004a
+TRACE 2015/12/01 13:34:51.525603 local.go:362: Starting LocalService.ReloadVM()
+TRACE 2015/12/01 13:34:51.525650 projects.go:273: Directory /Users/girangan/Desktop/spectre/shipped_testbed contains a .shipped directory
+TRACE 2015/12/01 13:34:51.525726 projects.go:273: Directory /Users/girangan/Desktop/spectre/shipped_testbed/gocl01 contains a .shipped directory
+TRACE 2015/12/01 13:34:51.526111 client.go:114: GET http://shipped-api.shipped-cisco.com/projects/79c12e70-9856-11e5-ad08-0242ac11055f?api_token=prWMOcNnzLoUlOLODhyCPNgGPCFkxHVg
+TRACE 2015/12/01 13:34:51.526137 client.go:148: Headers: map[]
+TRACE 2015/12/01 13:34:52.168049 client.go:157: Request status code 200 (200 OK)
+TRACE 2015/12/01 13:34:52.168240 config.go:139: Using config file /Users/girangan/Desktop/spectre/shipped_testbed/gocl01/.shipped/shipped.ini
+TRACE 2015/12/01 13:34:52.168304 config.go:158: Also using home config file /Users/girangan/.shipped/shipped.ini
+TRACE 2015/12/01 13:34:52.168316 projects.go:304: Changed to project 79c12e70-9856-11e5-ad08-0242ac11055f directory /Users/girangan/Desktop/spectre/shipped_testbed/gocl01
+TRACE 2015/12/01 13:34:52.168343 client.go:114: GET http://shipped-api.shipped-cisco.com/projects/79c12e70-9856-11e5-ad08-0242ac11055f/services/c6bf25de-9857-11e5-8538-0242ac11004a?api_token=prWMOcNnzLoUlOLODhyCPNgGPCFkxHVg
+TRACE 2015/12/01 13:34:52.168360 client.go:148: Headers: map[]
+TRACE 2015/12/01 13:34:52.749231 client.go:157: Request status code 200 (200 OK)
+TRACE 2015/12/01 13:34:52.749410 command.go:59: Executing command: vagrant reload goclsrv01
+2015/12/01 13:36:39.595013 local.go:441: /opt/vagrant/embedded/gems/gems/vagrant-1.7.4/bin/vagrant:186
+2015/12/01 13:36:39.595040 local.go:441: : stack level too deep (SystemStackError)
+TRACE 2015/12/01 13:36:39.949733 config.go:139: Using config file /Users/girangan/Desktop/spectre/shipped_testbed/gocl01/goclsrv01/.shipped/shipped.ini
+TRACE 2015/12/01 13:36:39.949794 config.go:148: Also using project config file /Users/girangan/Desktop/spectre/shipped_testbed/gocl01/.shipped/shipped.ini
+TRACE 2015/12/01 13:36:39.950134 config.go:158: Also using home config file /Users/girangan/.shipped/shipped.ini
+ERROR 2015/12/01 13:36:39.950182 commands.go:98: Unable to halt and restart: exit status 1
+TRACE 2015/12/01 13:39:00.718010 commands.go:92: Running command(local) subcommand(logs) args([]string(nil)) help(false)
+TRACE 2015/12/01 13:39:00.718038 commands.go:160: objDesc.Name = "Local"
+TRACE 2015/12/01 13:39:00.718075 uuidParser.go:196: ==> Using projectId 79c12e70-9856-11e5-ad08-0242ac11055f
+TRACE 2015/12/01 13:39:00.718093 uuidParser.go:196: ==> Using serviceId c6bf25de-9857-11e5-8538-0242ac11004a
+TRACE 2015/12/01 13:39:00.718104 local.go:339: Starting LocalService.Logs()
+TRACE 2015/12/01 13:39:00.718347 projects.go:273: Directory /Users/girangan/Desktop/spectre/shipped_testbed contains a .shipped directory
+TRACE 2015/12/01 13:39:00.718430 projects.go:273: Directory /Users/girangan/Desktop/spectre/shipped_testbed/gocl01 contains a .shipped directory
+TRACE 2015/12/01 13:39:00.718525 client.go:114: GET http://shipped-api.shipped-cisco.com/projects/79c12e70-9856-11e5-ad08-0242ac11055f?api_token=prWMOcNnzLoUlOLODhyCPNgGPCFkxHVg
+TRACE 2015/12/01 13:39:00.718546 client.go:148: Headers: map[]
+TRACE 2015/12/01 13:39:01.919408 client.go:157: Request status code 200 (200 OK)
+TRACE 2015/12/01 13:39:01.919678 config.go:139: Using config file /Users/girangan/Desktop/spectre/shipped_testbed/gocl01/.shipped/shipped.ini
+TRACE 2015/12/01 13:39:01.919760 config.go:158: Also using home config file /Users/girangan/.shipped/shipped.ini
+TRACE 2015/12/01 13:39:01.919777 projects.go:304: Changed to project 79c12e70-9856-11e5-ad08-0242ac11055f directory /Users/girangan/Desktop/spectre/shipped_testbed/gocl01
+TRACE 2015/12/01 13:39:01.919827 client.go:114: GET http://shipped-api.shipped-cisco.com/projects/79c12e70-9856-11e5-ad08-0242ac11055f/services/c6bf25de-9857-11e5-8538-0242ac11004a?api_token=prWMOcNnzLoUlOLODhyCPNgGPCFkxHVg
+TRACE 2015/12/01 13:39:01.919849 client.go:148: Headers: map[]
+TRACE 2015/12/01 13:39:02.452369 client.go:157: Request status code 200 (200 OK)
+TRACE 2015/12/01 13:39:02.452601 command.go:59: Executing command: vagrant docker-logs goclsrv01
+2015/12/01 13:40:48.387180 local.go:441: /opt/vagrant/embedded/gems/gems/vagrant-1.7.4/bin/vagrant:186
+2015/12/01 13:40:48.387214 local.go:441: : stack level too deep (SystemStackError)
+TRACE 2015/12/01 13:40:48.731764 config.go:139: Using config file /Users/girangan/Desktop/spectre/shipped_testbed/gocl01/goclsrv01/.shipped/shipped.ini
+TRACE 2015/12/01 13:40:48.731825 config.go:148: Also using project config file /Users/girangan/Desktop/spectre/shipped_testbed/gocl01/.shipped/shipped.ini
+TRACE 2015/12/01 13:40:48.731860 config.go:158: Also using home config file /Users/girangan/.shipped/shipped.ini
+ERROR 2015/12/01 13:40:48.731887 commands.go:98: Unable to retrieve logs: exit status 1
+TRACE 2015/12/01 13:46:03.930547 console.go:262: Exit 1
+TRACE 2015/12/01 13:46:10.852667 commands.go:92: Running command(local) subcommand(commit) args([]string{"$projectId", "Message=First commit"}) help(false)
+TRACE 2015/12/01 13:46:10.852692 commands.go:160: objDesc.Name = "Local"
+TRACE 2015/12/01 13:46:10.852735 uuidParser.go:196: ==> Using projectId 79c12e70-9856-11e5-ad08-0242ac11055f
+TRACE 2015/12/01 13:46:10.852754 uuidParser.go:196: ==> Using serviceId c6bf25de-9857-11e5-8538-0242ac11004a
+TRACE 2015/12/01 13:46:10.853252 projects.go:273: Directory /Users/girangan/Desktop/spectre/shipped_testbed contains a .shipped directory
+TRACE 2015/12/01 13:46:10.853344 projects.go:273: Directory /Users/girangan/Desktop/spectre/shipped_testbed/gocl01 contains a .shipped directory
+TRACE 2015/12/01 13:46:10.853410 client.go:114: GET http://shipped-api.shipped-cisco.com/projects/79c12e70-9856-11e5-ad08-0242ac11055f?api_token=prWMOcNnzLoUlOLODhyCPNgGPCFkxHVg
+TRACE 2015/12/01 13:46:10.853430 client.go:148: Headers: map[]
+TRACE 2015/12/01 13:46:11.974005 client.go:157: Request status code 200 (200 OK)
+TRACE 2015/12/01 13:46:11.974272 config.go:139: Using config file /Users/girangan/Desktop/spectre/shipped_testbed/gocl01/.shipped/shipped.ini
+TRACE 2015/12/01 13:46:11.981087 config.go:158: Also using home config file /Users/girangan/.shipped/shipped.ini
+TRACE 2015/12/01 13:46:11.981136 projects.go:304: Changed to project 79c12e70-9856-11e5-ad08-0242ac11055f directory /Users/girangan/Desktop/spectre/shipped_testbed/gocl01
+TRACE 2015/12/01 13:46:11.981159 local.go:277: Starting LocalService.Commit()
+TRACE 2015/12/01 13:46:11.981534 client.go:114: GET http://shipped-api.shipped-cisco.com/projects/79c12e70-9856-11e5-ad08-0242ac11055f/services/c6bf25de-9857-11e5-8538-0242ac11004a?api_token=prWMOcNnzLoUlOLODhyCPNgGPCFkxHVg
+TRACE 2015/12/01 13:46:11.981579 client.go:148: Headers: map[]
+TRACE 2015/12/01 13:46:12.519469 client.go:157: Request status code 200 (200 OK)
+TRACE 2015/12/01 13:46:12.526811 command.go:59: Executing command: git commit --allow-empty -m First commit
+TRACE 2015/12/01 13:46:12.633544 command.go:59: Executing command: git push origin master
+TRACE 2015/12/01 13:46:44.452699 commands.go:92: Running command(local) subcommand(run) args([]string(nil)) help(false)
+TRACE 2015/12/01 13:46:44.452744 commands.go:160: objDesc.Name = "Local"
+TRACE 2015/12/01 13:46:44.452786 uuidParser.go:196: ==> Using projectId 79c12e70-9856-11e5-ad08-0242ac11055f
+ERROR 2015/12/01 13:46:44.452834 commands.go:98: Local Run: Required UUID argument serviceId not provided and no saved value of serviceId available
+TRACE 2015/12/01 13:47:00.408450 config.go:100: .shipped directory already exists
+TRACE 2015/12/01 13:47:00.408558 config.go:109: Config file .shipped/shipped.ini already exists in /Users/girangan
+TRACE 2015/12/01 13:47:00.408668 config.go:139: Using config file /Users/girangan/.shipped/shipped.ini
+TRACE 2015/12/01 13:47:00.408746 config.go:139: Using config file /Users/girangan/Desktop/spectre/shipped_testbed/gocl01/goclsrv01/.shipped/shipped.ini
+TRACE 2015/12/01 13:47:00.408793 config.go:148: Also using project config file /Users/girangan/Desktop/spectre/shipped_testbed/gocl01/.shipped/shipped.ini
+TRACE 2015/12/01 13:47:00.408841 config.go:158: Also using home config file /Users/girangan/.shipped/shipped.ini
+TRACE 2015/12/01 13:47:00.412342 utils.go:98: Console width is 80; help width is 79
+TRACE 2015/12/01 13:47:00.412412 main.go:123: Shipped-cli 1.0 b25 20151124 172135 starting in console mode with args {BootLogfile: ConfigFile: ConsoleMode:false Debug:false Expanded:true FastBootstrap:false Full:false Help:false Json:false Latest:false LocalDocker:false Logfile:/Users/girangan/Desktop/spectre/shipped_testbed/gocl01/goclsrv01/shipped-cli.log MockSDKClient:false OutputFields: ShippedHome: ShowVersion:false Server:http://shipped-api.shipped-cisco.com Token:prWMOcNnzLoUlOLODhyCPNgGPCFkxHVg ObjType:consol Command: Arguments:[]}
